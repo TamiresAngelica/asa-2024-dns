@@ -1,0 +1,16 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	tamires.asa.br. root.tamires.asa.br. (
+			 2024080420; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.tamires.asa.br.
+@	IN	A	192.168.0.9
+ns	IN	A	192.168.0.9
+www	IN	CNAME	ns
+
